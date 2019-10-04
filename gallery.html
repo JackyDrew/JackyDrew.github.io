@@ -1,0 +1,38 @@
+---
+layout: gallery
+images:
+  - image_path: /assets/photos/attachment-1.jpeg
+    title:
+  - image_path: /assets/photos/photo-2.JPG
+    title:
+  - image_path: /assets/photos/photo-3.JPG
+    title:
+  - image_path: /assets/photos/photo-4.JPG
+    title:
+  - image_path: /assets/photos/photo-5.JPG
+    title:
+  - image_path: /assets/photos/photo-6.JPG
+    title:
+  - image_path: /assets/photos/photo-7.JPG
+    title:
+  - image_path: /assets/photos/photo-8.JPG
+    title:
+  - image_path: /assets/photos/photo-9.JPG
+    title:
+  - image_path: /assets/photos/photo-10.JPG
+    title:
+  - image_path: /assets/photos/photo-11.JPG
+    title:
+---
+
+<div class="container mt-5 mb-5">
+  <div class="row text-center text-lg-left">
+    {% for image in page.images %}
+     <div class="col-lg-4 col-md-4 col-6">
+       <a href="{{ image.image_path }}" class="d-block mb-4 h-100" title="{{ image.title }}">
+             <img class="img-fluid" data-echo="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ image.image_path }}&w=400&h=300&output=jpg&q=50&t=square"  alt="{{ image.title }}" title="{{ image.title }}">
+           </a>
+     </div>
+  {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg navbar-light mb-4 d-none d-lg-flex">
+        <a class="navbar-brand text-uppercase" href="{{ '/' | prepend: site.baseurl }}">Jack Carneal</a>
+        <div class="collapse navbar-collapse" id="navbardesktop">
+            <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item {% if page.name == 'about.html' %}active{% endif %}">
+                    <a class="nav-link" href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+                </li>
+                <li class="nav-item {% if page.name == 'order.html' %}active{% endif %}">
+                    <a class="nav-link" href="{{ '/order/' | prepend: site.baseurl }}">Order</a>
+                </li>
+                <li class="nav-item {% if page.name == 'other.html' %}active{% endif %}">
+                    <a class="nav-link" href="{{ '/other/' | prepend: site.baseurl }}">Other</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://twitter.com/jackcarneal" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/jackcarneal" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#106;&#97;&#99;&#107;&#99;&#97;&#114;&#110;&#101;&#97;&#108;&#46;&#99;&#111;&#109;" target="_blank"><i class="far fa-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div class="mobile-nav d-lg-none">
+
+
+    <div class="container-fluid  mt-3">
+      <h1 class="text-center mobile-brand text-uppercase"><a href="{{ '/' | prepend: site.baseurl }}">Jack Carneal</a></h1>
+    </div>
+
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center text-uppercase">
+                <li class="nav-item {% if page.name == 'about.html' %}active{% endif %}">
+                    <a class="nav-link" href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+                </li>
+                <li class="nav-item {% if page.name == 'order.html' %}active{% endif %}">
+                    <a class="nav-link" href="{{ '/order/' | prepend: site.baseurl }}">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/other/' | prepend: site.baseurl }}">Other</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://twitter.com/jackcarneal" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/jackcarneal" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+
+    <div class="text-center border-top border-bottom">
+      <div>
+        <button type="button"   class="btn btn-menu btn-lg btn-block" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>MENU</span>
+        </button>
+      </div>
+    </div>
+
+
+</div>

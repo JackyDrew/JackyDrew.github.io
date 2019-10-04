@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+      {% include nav.html %}
+  <div class="firstwrapper">
+    <main class="wrapper">
+
+                      {{ content }}
+
+    </main>
+
+      {% include footer.html %}
+  </div>
+
+      {% include bottom.html %}
+      {% include lightbox.html %}
+      {% include lazy-load.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/app.css' | prepend: site.baseurl }}" />
+
+  </body>
+</html>

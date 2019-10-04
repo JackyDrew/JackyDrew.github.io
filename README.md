@@ -1,2 +1,2 @@
-# JackyDrew.github.io
-Author Website
+# jack-sample-site
+Jack Carneal Webpage
